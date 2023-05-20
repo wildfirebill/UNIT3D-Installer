@@ -24,7 +24,7 @@ Installer for the [UNIT3D-Community-Edition](https://github.com/HDInnovations/UN
 
 **To install run the following:**
 ```
-git clone https://github.com/poppabear8883/UNIT3D-INSTALLER.git installer
+git clone https://github.com/HDInnovations/UNIT3D-Installer.git installer
 cd installer
 sudo ./install.sh
 ```
