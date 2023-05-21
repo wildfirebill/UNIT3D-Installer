@@ -27,7 +27,8 @@ config/secure-headers.php   <-- Content Security Policy must be disabled
 ```
 
 **Officially Supported OS's**
-- Ubuntu 20.04 LTS
+- Ubuntu 22.04 LTS (Jammy Jellyfish)
+- Ubuntu 20.04 LTS (Focal Fossa)
 
 **To install run the following:**
 ```
