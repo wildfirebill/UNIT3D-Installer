@@ -19,6 +19,13 @@
 ## This Repository
 Installer for the [UNIT3D-Community-Edition](https://github.com/HDInnovations/UNIT3D-Community-Edition).
 
+**NOTE: If you are running UNIT3D-Community-Edition on a non HTTPS instance you MUST change the following configs.**
+```
+.env  <-- SESSION_SECURE_COOKIE must be set to false
+config/secure-headers.php   <-- HTTP Strict Transport Security must be set to false
+config/secure-headers.php   <-- Content Security Policy must be disabled
+```
+
 **Officially Supported OS's**
 - Ubuntu 20.04 LTS
 
