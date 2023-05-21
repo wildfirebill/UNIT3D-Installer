@@ -28,7 +28,7 @@ class InstallCommand extends Command
         DatabaseSetup::class => 'Configuring & Securing Database',
         PhpSetup::class => 'PHP & PHP-FPM Configuration',
         NginxSetup::class => 'Nginx Setup & Configurations',
-        Unit3dSetup::class => 'UNIT3D Settings and Configuration',
+        Unit3dSetup::class => 'UNIT3D-Community-Edition Settings and Configuration',
     ];
 
     /**
@@ -91,7 +91,7 @@ class InstallCommand extends Command
         ]);
 
         $this->io->writeln([
-            '<fg=green>UNIT3D has been successfully installed!</>',
+            '<fg=green>UNIT3D-Community-Edition has been successfully installed!</>',
             ' ',
             "Visit <fg=green>$domain</> in a browser",
             ' ',

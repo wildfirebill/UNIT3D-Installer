@@ -133,86 +133,11 @@ if (!function_exists('distinfo')) {
         $mainver = $matches[0];
 
         switch ($mainver) {
+            case "22.04":
+                $relname = "(Jammy Jellyfish)";
+                break;
             case "20.04":
                 $relname = "(Focal Fossa)";
-                break;
-            case "18.04":
-                $relname = "(Bionic Beaver)";
-                break;
-            case "16.10":
-                $relname = "(Yakkety Yak)";
-                break;
-            case "16.04":
-                $relname = "(Xenial Xerus)";
-                break;
-            case "15.10":
-                $relname = "(Wily Werewolf)";
-                break;
-            case "15.04":
-                $relname = "(Vivid Vervet)";
-                break;
-            case "14.10":
-                $relname = "(Utopic Unicorn)";
-                break;
-            case "14.04":
-                $relname = "(Trusty Tahr)";
-                break;
-            case "13.10":
-                $relname = "(Saucy Salamander)";
-                break;
-            case "13.04":
-                $relname = "(Raring Ringtail)";
-                break;
-            case "12.10":
-                $relname = "(Quantal Quetzal)";
-                break;
-            case "12.04":
-                $relname = "(Precise Pangolin)";
-                break;
-            case "11.10":
-                $relname = "(Oneiric Ocelot)";
-                break;
-            case "11.14":
-                $relname = "(Natty Narwhal)";
-                break;
-            case "10.10":
-                $relname = "(Maverick Meerkat)";
-                break;
-            case "10.04":
-                $relname = "(Lucid Lynx)";
-                break;
-            case "9.10":
-                $relname = "(Karmic Koala)";
-                break;
-            case "9.04":
-                $relname = "(Jaunty Jackpole)";
-                break;
-            case "8.10":
-                $relname = "(Intrepid Ibex)";
-                break;
-            case "8.04":
-                $relname = "(Hardy Heron)";
-                break;
-            case "7.10":
-                $relname = "(Gutsy Gibbon)";
-                break;
-            case "7.04":
-                $relname = "(Feisty Fawn)";
-                break;
-            case "6.10":
-                $relname = "(Edgy Eft)";
-                break;
-            case "6.06":
-                $relname = "(Dapper Drake)";
-                break;
-            case "5.10":
-                $relname = "(Breezy Badger)";
-                break;
-            case "5.04":
-                $relname = "(Hoary Hedgehog)";
-                break;
-            case "4.10":
-                $relname = "(Warty Warthog)";
                 break;
             default:
                 $relname = "UNKNOWN";

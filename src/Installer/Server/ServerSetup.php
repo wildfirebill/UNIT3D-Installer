@@ -28,7 +28,7 @@ class ServerSetup extends BaseInstaller
         $this->config->app('server_name', trim($server_name));
 
         do {
-            $hostname = strtolower($this->question('The FQDN for this server', fqdn()));
+            $hostname = strtolower($this->question('The domain your going to use. ( Example: example.com )', fqdn()));
 
             $valid = (str_contains($hostname, '.') || $hostname === 'localhost');
 
@@ -83,7 +83,7 @@ class ServerSetup extends BaseInstaller
         $driver = $this->io->choice('Choose a database driver', $driver_choices, $default_driver);
         $this->config->app('database_driver', $driver);
 
-        $this->io->writeln('<fg=red>It is STRONGLY advised to set a DB Server Root Password.</>');
+        $this->io->writeln('<fg=red>Special Characters Are Not Working At This Time!</>');
         $db_root_pass = $this->question('DB Server Root Password', '');
         $this->config->app('dbrootpass', $db_root_pass);
 
@@ -93,6 +93,7 @@ class ServerSetup extends BaseInstaller
         $dbuser = $this->question('UNIT3D DB User', 'unit3d');
         $this->config->app('dbuser', $dbuser);
 
+        $this->io->writeln('<fg=red>Special Characters Are Not Working At This Time!</>');
         $dbpass = $this->question('UNIT3D DB Password', '');
         $this->config->app('dbpass', $dbpass);
     }
@@ -149,7 +150,7 @@ class ServerSetup extends BaseInstaller
         $value = $this->question('Mail Host', '');
         $this->config->app('mail_host', $value);
 
-        $value = $this->question('Mail Port', '');
+        $value = $this->question('Mail Port', '587');
         $this->config->app('mail_port', $value);
 
         $value = $this->question('Mail Username', '');

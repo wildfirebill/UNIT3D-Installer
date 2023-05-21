@@ -18,11 +18,11 @@ class Prerequisites extends BaseInstaller
         }
         $this->seperator();
 
-        if (!$this->io->confirm('Do you wish to continue?', false)) {
+        if (!$this->io->confirm('Do you wish to continue?', true)) {
             $this->throwError('Aborted ...');
         };
 
-        $this->process(['curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -']);
+        $this->process(['curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -']);
 
         $pkgs = implode(' ', array_keys($software));
         $this->install($pkgs);

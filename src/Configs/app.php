@@ -3,7 +3,7 @@
 use App\Installer\Database\MySqlSetup;
 
 return [
-    'min_php_version' => '7.4',
+    'min_php_version' => '8.1',
 
     'repository' => 'https://github.com/HDInnovations/UNIT3D-Community-Edition.git',
 
@@ -12,12 +12,10 @@ return [
          * Map to the Installer class
          */
         'MySql' => MySqlSetup::class,
-        //'MariaDB' => '',
-        //'Postgres' => '',
     ],
 
     /*
-     * Dynamically set configuration defaults and place holders
+     * Dynamically set configuration defaults and placeholders
      *
      * These do NOT need policy classes
      */

@@ -3,7 +3,7 @@
 return [
 
     /*
-     * UBUNTU
+     * Ubuntu
      */
     'ubuntu' => [
         'pkg_manager' => 'apt',

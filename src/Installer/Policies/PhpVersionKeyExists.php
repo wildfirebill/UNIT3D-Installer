@@ -12,7 +12,7 @@ class PhpVersionKeyExists extends BasePolicy
                 
                 Please fix this and try again.
                  
-                Example: 'min_php_version' => '7.0',"
+                Example: 'min_php_version' => '8.1',"
             );
         }
     }
