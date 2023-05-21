@@ -52,6 +52,7 @@ class Unit3dSetup extends BaseInstaller
 
         $this->createFromStub(
             [
+                '{{PROTOCOL}}' => $this->config->app('ssl') == 'yes' ? 'https' : 'http',
                 '{{FQDN}}' => $this->config->app('hostname'),
                 '{{DBDRIVER}}' => strtolower($this->config->app('database_driver')),
                 '{{DB}}' => $this->config->app('db'),
