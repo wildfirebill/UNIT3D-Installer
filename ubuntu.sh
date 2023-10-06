@@ -52,6 +52,10 @@ add_pkgs() {
     check $? "Installing PHP Failed!"
 
     echo -e "$IGreen OK $Color_Off"
+
+    #PHP Redis
+    echo -e "\n$Cyan Installing PHP Redis ... $Color_Off"
+    printf "\n" | pecl install redis
 }
 
 # Installs Composer
