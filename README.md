@@ -33,7 +33,7 @@ config/secure-headers.php   <-- Content Security Policy must be disabled
 
 **To install run the following:**
 ```
-git clone https://github.com/wildfirebill/UNIT3D-Community-Edition.git installer
+git clone https://github.com/wildfirebill/UNIT3D-Installer.git installer
 cd installer
 sudo ./install.sh
 ```
